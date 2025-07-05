@@ -20,8 +20,8 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
   }
 
   return (
-    <div className="space-y-2">
-      <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
+    <div className="space-y-2 md:sticky top-12 flex flex-col">
+      <div className="flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
         {aboutMe.imageUrl && (
           <div className="w-1/3 md:w-full flex-shrink-0">
             <div className="relative max-h-[45vh] md:w-[65%] aspect-[1/1]">
@@ -47,133 +47,101 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
         </div>
       </div>
       <div>
-        <div>
-          <p className="text-base leading-relaxed uppercase mb-6">
-            {aboutMe.title},
-            <br />
-            {aboutMe.institutionUrl ? (
-              <a
-                href={aboutMe.institutionUrl}
-                className="hover:text-zinc-900 transition-colors duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {aboutMe.institution}
-              </a>
-            ) : (
-              aboutMe.institution
-            )}
-          </p>
-          {/* <div className="flex gap-6 mb-6">
-            {aboutMe.blogUrl && (
-              <a
-                href={aboutMe.blogUrl}
-                className="group inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ArrowUpRight
-                  size={12}
-                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
-                />
-                <span className="tracking-wider uppercase">Blog</span>
-              </a>
-            )}
-            {aboutMe.cvUrl && (
-              <a
-                href={aboutMe.cvUrl}
-                className="group inline-flex items-center gap-2 text-base text-[#1e86c8] hover:text-blue-900 transition-colors duration-300 font-bold"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ArrowUpRight
-                  size={12}
-                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
-                />
-                <span className="tracking-wider uppercase">CV</span>
-              </a>
-            )}
-          </div> */}
-          <div className="space-y-2">
-            {aboutMe.cvUrl && (
-              <>
-              <a
-                href={aboutMe.cvUrl}
-                className="inline-flex items-center gap-2 text-base underline text-[#1e86c8] hover:text-blue-900 transition-colors font-bold"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StickyNote size={14} className="text-black"/>
-                <span className="tracking-wider uppercase">CV</span>
-              </a>
-              </>
-            )}
-            <br />
+        <p className="text-base leading-relaxed uppercase mb-6">
+          {aboutMe.title},
+          <br />
+          {aboutMe.institutionUrl ? (
             <a
-              href={`mailto:${aboutMe.email}`}
+              href={aboutMe.institutionUrl}
+              className="hover:text-zinc-900 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {aboutMe.institution}
+            </a>
+          ) : (
+            aboutMe.institution
+          )}
+        </p>
+        <div className="space-y-2">
+          {aboutMe.cvUrl && (
+            <>
+            <a
+              href={aboutMe.cvUrl}
               className="inline-flex items-center gap-2 text-base underline text-[#1e86c8] hover:text-blue-900 transition-colors font-bold"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Mail size={14} className="text-black"/>
-              {aboutMe.email}
+              <StickyNote size={14} className="text-black"/>
+              <span className="tracking-wider uppercase">CV</span>
             </a>
-            {aboutMe.googleScholarUrl && (
-              <>
-                <br />
-                <a
-                  href={aboutMe.googleScholarUrl}
-                  className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GraduationCap size={14} />
-                  Google Scholar
-                </a>
-              </>
-            )}
-            {aboutMe.twitterUsername && (
-              <>
-                <br />
-                <a
-                  href={`https://twitter.com/${aboutMe.twitterUsername}`}
-                  className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Twitter size={14} />@{aboutMe.twitterUsername}
-                </a>
-              </>
-            )}
-            {aboutMe.githubUsername && (
-              <>
-                <br />
-                <a
-                  href={`https://github.com/${aboutMe.githubUsername}`}
-                  className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github size={14} />
-                  github.com/{aboutMe.githubUsername}
-                </a>
-              </>
-            )}
-            {aboutMe.linkedinUsername && (
-              <>
-                <br />
-                <a
-                  href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
-                  className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin size={14} />
-                  linkedin.com/in/{aboutMe.linkedinUsername}
-                </a>
-              </>
-            )}
-          </div>
+            </>
+          )}
+          <br />
+          <a
+            href={`mailto:${aboutMe.email}`}
+            className="inline-flex items-center gap-2 text-base underline text-[#1e86c8] hover:text-blue-900 transition-colors font-bold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Mail size={14} className="text-black"/>
+            {aboutMe.email}
+          </a>
+          {aboutMe.googleScholarUrl && (
+            <>
+              <br />
+              <a
+                href={aboutMe.googleScholarUrl}
+                className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GraduationCap size={14} />
+                Google Scholar
+              </a>
+            </>
+          )}
+          {aboutMe.twitterUsername && (
+            <>
+              <br />
+              <a
+                href={`https://twitter.com/${aboutMe.twitterUsername}`}
+                className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter size={14} />@{aboutMe.twitterUsername}
+              </a>
+            </>
+          )}
+          {aboutMe.githubUsername && (
+            <>
+              <br />
+              <a
+                href={`https://github.com/${aboutMe.githubUsername}`}
+                className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={14} />
+                github.com/{aboutMe.githubUsername}
+              </a>
+            </>
+          )}
+          {aboutMe.linkedinUsername && (
+            <>
+              <br />
+              <a
+                href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
+                className="inline-flex items-center gap-2 text-base hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={14} />
+                linkedin.com/in/{aboutMe.linkedinUsername}
+              </a>
+            </>
+          )}
         </div>
       </div>
     </div>
