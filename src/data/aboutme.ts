@@ -18,22 +18,22 @@ export interface AboutMe {
 }
 
 export const aboutMe: AboutMe = {
-  name: "Jane R. Smith",
-  title: "Ph.D. Candidate",
-  institution: "Stanford University",
+  name: "Yuta Noma",
+  altName: "野間 裕太",
+  title: "Ph.D. Student",
+  institution: "University of Toronto",
   // Note that links work in the description
   description:
-    "I'm a final-year <a href='https://www.stanford.edu'>PhD candidate</a> working at the intersection of causal inference and machine learning. My research focuses on developing robust, interpretable systems that can reason about cause and effect in complex environments.",
-  email: "______@stanford.edu",
-  imageUrl:
-    "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  googleScholarUrl: "https://scholar.google.com/citations?user=bWtMl_MAAAAJ",
-  githubUsername: "janesmith",
-  linkedinUsername: "janesmith",
-  twitterUsername: "janesmith",
-  blogUrl: "https://",
-  cvUrl: "https://",
-  institutionUrl: "https://www.stanford.edu",
+    "Hi there! I'm a PhD student at the University of Toronto advised by <a href='https://www.dgp.toronto.edu/~karan/' target='_blank'>Karan Singh</a> and <a href='https://www.cs.toronto.edu/~jacobson/' target='_blank'>Alec Jacobson</a>. I'm grateful to be supported by the <a href='https://www.toyotariken.jp/overseas/' target='_blank'>Toyota Riken Scholarship</a>.<br><br> My research interest is in computer graphics, specifically geometry processing. My research goal is to develop tools and algorithms to process geometric data more reliably and interactively.<br><br>Prior to my PhD, I did my master's and undergraduate studies at the <a href='https://www.ee.t.u-tokyo.ac.jp/en/' target='_blank'>EEIC department</a> of the University of Tokyo.",
+  email: "yutanoma@dgp.toronto.edu",
+  imageUrl: "/images/icon.jpg",
+  // googleScholarUrl: "https://scholar.google.com/citations?user=NnPAgSkAAAAJ&hl=ja",
+  // githubUsername: "yutanoma",
+  // linkedinUsername: "janesmith",
+  // twitterUsername: "ytnm0520",
+  // blogUrl: "https://",
+  cvUrl: "https://drive.google.com/file/d/146k6pUU-9wYQI-cgY9mUqM_9ET8jj3Z2/view?usp=sharing",
+  // institutionUrl: "https://www.stanford.edu",
   // altName: "",
   // secretDescription: "I like dogs.",
 };

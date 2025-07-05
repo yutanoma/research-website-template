@@ -3,7 +3,9 @@ export interface Publication {
   conference: string;
   title: string;
   authors: string;
+  projectUrl?: string;
   paperUrl?: string;
+  videoUrl?: string;
   codeUrl?: string;
   bibtex?: string;
   tldr?: string;
@@ -15,25 +17,83 @@ export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
   {
     year: "2024",
-    conference: "NeurIPS",
-    title: "Scalable Causal Discovery in High-Dimensional Time Series",
-    authors: "Jane Smith, Sarah Johnson, Yue Zhang",
-    paperUrl: "https://arxiv.org/abs/2409.15476",
-    codeUrl: "https://github.com/jsmith/scalable-causal-discovery",
+    conference: "SIGGRAPH North America",
+    title: "Surface-Filling Curve Flows via Implicit Medial Axes",
+    authors: "<span class='underline'>Yuta Noma</span>, Silvia Sellán, Nicholas Sharp, Karan Singh, Alec Jacobson",
+    projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
+    paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
+    codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
+    videoUrl: "https://www.youtube.com/watch?v=DeWv9sClz-8",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
-    tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1561622539-dffbfc2008fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    award: "🏆 Best Paper Award",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl: "/images/proj_surf_filling.webp",
+    // award: "🏆 Best Paper Award",
     // if you have an image in public/images, you can use it like this:
     // imageUrl: "/images/publication-image.jpg"
   },
   {
     year: "2023",
-    conference: "ICML",
-    title: "Robust Causal Discovery Under Distribution Shift",
-    authors: "Jane Smith, Xue Chen, Sarah Johnson",
-    paperUrl: "https://arxiv.org/abs/2302.13095",
-    codeUrl: "https://github.com/jsmith/robust-causal-discovery",
+    conference: "SIGGRAPH North America",
+    title: "Inkjet 4D Print: Self-folding Tessellated Origami Objects by Inkjet UV Printing",
+    authors: "Koya Narumi*, Kazuki Koyama*, Kai Suto, <span class='underline'>Yuta Noma</span>, Hiroki Sato, Tomohiro Tachi, Masaaki Sugimoto, Takeo Igarashi, Yoshihiro Kawahara",
+    projectUrl: "https://narumi.me/inkjet4dprint",
+    paperUrl: "https://dl.acm.org/doi/10.1145/3592409",
+    // codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
+    videoUrl: "https://www.youtube.com/watch?v=2rY-XNBnTW4",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl: "/images/proj_inkjet4d.webp",
+    // award: "🏆 Best Paper Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+  },
+  {
+    year: "2023",
+    conference: "ACM TOCHI",
+    title: "Crane: An Integrated Computational Design Platform for Functional, Foldable, and Fabricable Origami Products",
+    authors: "Kai Suto, <span class='underline'>Yuta Noma</span>, Kotaro Tanimichi, Koya Narumi, Tomohiro Tachi",
+    // projectUrl: "https://narumi.me/inkjet4dprint",
+    paperUrl: "https://dl.acm.org/doi/10.1145/3576856",
+    // codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
+    videoUrl: "https://www.youtube.com/watch?v=1HRlDPuNSMo",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl: "/images/proj_crane.webp",
+    // award: "🏆 Best Paper Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+  },
+  {
+    year: "2022",
+    conference: "SIGGRAPH Asia",
+    title: "Fast Editing of Singularities in Field-Aligned Stripe Patterns",
+    authors: "<span class='underline'>Yuta Noma</span>, Nobuyuki Umetani, Yoshihiro Kawahara",
+    // projectUrl: "https://narumi.me/inkjet4dprint",
+    paperUrl: "https://dl.acm.org/doi/10.1145/3550469.3555387",
+    codeUrl: "https://github.com/yutanoma/singularity-editing",
+    videoUrl: "https://www.youtube.com/watch?v=vkujJi3-Ems",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl: "/images/proj_singularity.webp",
+    // award: "🏆 Best Paper Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+  },
+  {
+    year: "2020",
+    conference: "UIST",
+    title: "Pop-up Print: Rapidly 3D Printing Mechanically Reversible Objects in the Folded State",
+    authors: "<span class='underline'>Yuta Noma</span>, Koya Narumi, Fuminori Okuya, Yoshihiro Kawahara",
+    // projectUrl: "https://narumi.me/inkjet4dprint",
+    paperUrl: "https://drive.google.com/file/d/10wTWySzOccmUK7VSKrQT99MHp3e_nvKT/view",
+    // codeUrl: "https://github.com/yutanoma/pop-up-print",
+    videoUrl: "https://www.youtube.com/watch?v=jeqv7gJ9hSE",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl:
+      "/images/proj_popup.webp",
+    // award: "🏆 Best Paper Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
   },
 ];

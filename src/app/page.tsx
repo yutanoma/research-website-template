@@ -11,10 +11,11 @@ import { experienceData } from "@/data/experience";
 import { PortfolioEntry } from "@/components/portfolio-entry";
 import { portfolioData } from "@/data/portfolio";
 import { sectionOrder, Section } from "@/data/section-order";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FFFCF8]">
+    <div className="min-h-screen bg-white">
       {/* Don't have a great call on whether max-w-screen-xl is better */}
       <div className="max-w-screen-lg mx-auto px-8 py-24">
         {/* Grid Layout */}
@@ -28,12 +29,12 @@ export default function Home() {
           </div>
 
           {/* Right Column - Scrolling Content */}
-          <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-24">
+          <div className="col-span-12 md:col-span-8 md:col-start-5 space-y-16 md:space-y-24">
             {/* About section is typically first */}
             {aboutMe.description && (
               <section>
                 <p
-                  className="font-serif text-sm leading-relaxed text-zinc-700 [&_a]:underline [&_a]:text-zinc-900 [&_a:hover]:text-zinc-600"
+                  className="font-serif text-base md:text-lg leading-relaxed [&_a]:underline [&_a]:text-[#1e86c8] [&_a:hover]:text-blue-900 [&_a]:font-bold [&_a]:cursor-pointer"
                   dangerouslySetInnerHTML={{ __html: aboutMe.description }}
                 />
               </section>
@@ -47,7 +48,7 @@ export default function Home() {
                   return (
                     newsData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif text-xl mb-6 tracking-wide uppercase">
                           News
                         </h2>
                         <div className="space-y-12">
@@ -79,10 +80,13 @@ export default function Home() {
                   return (
                     publicationData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
-                          Publications
-                        </h2>
-                        <div className="space-y-12">
+                        <div className="flex items-center mb-8">
+                          <Image src="/images/logo.png" alt="Research" width={32} height={32} className="inline-block mr-4" />
+                          <h2 className="font-serif text-3xl tracking-wide uppercase font-bold">
+                            Research
+                          </h2>
+                        </div>
+                        <div className="space-y-8">
                           {publicationData.map((publication, index) => (
                             <div key={index}>
                               <PublicationEntry publication={publication} />
@@ -99,7 +103,7 @@ export default function Home() {
                   return (
                     experienceData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif text-xl mb-6 tracking-wide uppercase">
                           Experience
                         </h2>
                         <div className="space-y-12">
@@ -117,7 +121,7 @@ export default function Home() {
                   return (
                     portfolioData.length > 0 && (
                       <section key={sectionName}>
-                        <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
+                        <h2 className="font-serif text-xl mb-6 tracking-wide uppercase">
                           Portfolio
                         </h2>
                         <div className="space-y-12">
