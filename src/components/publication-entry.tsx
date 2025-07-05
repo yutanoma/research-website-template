@@ -23,19 +23,19 @@ export function PublicationEntry({
       <div className="flex flex-col flex-1">
         <h3 className="font-serif text-lg mb-1 font-bold">{publication.title}</h3>
         <div className="flex flex-row gap-4 items-center mb-1">
-          <p className="text-base italic">
+          <p className="text-sm italic">
             {publication.conference} {publication.year}
           </p>
           {publication.award && (
             <div className="group flex px-2 py-1 bg-gradient-to-r from-amber-50 to-rose-50 rounded-md items-center shadow-md border border-amber-100/50 relative overflow-hidden hover:rotate-1 transition-all duration-300">
               <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/90 to-transparent" />
-              <p className="text-base text-amber-700 font-medium relative">
+              <p className="text-sm text-amber-700 font-medium relative">
                 {publication.award}
               </p>
             </div>
           )}
         </div>
-        <p className="text-base mb-3" dangerouslySetInnerHTML={{ __html: publication.authors }} />
+        <p className="text-sm mb-3" dangerouslySetInnerHTML={{ __html: publication.authors }} />
         <div className="flex flex-row gap-4">
           {publication.projectUrl && (
             <a
