@@ -84,7 +84,7 @@ export const publicationData: Publication[] = [
     conference: "UIST",
     title: "Pop-up Print: Rapidly 3D Printing Mechanically Reversible Objects in the Folded State",
     authors: "<span class='underline'>Yuta Noma</span>, Koya Narumi, Fuminori Okuya, Yoshihiro Kawahara",
-    // projectUrl: "https://narumi.me/inkjet4dprint",
+    projectUrl: "https://narumi.me/pop-up-print",
     paperUrl: "https://drive.google.com/file/d/10wTWySzOccmUK7VSKrQT99MHp3e_nvKT/view",
     // codeUrl: "https://github.com/yutanoma/pop-up-print",
     videoUrl: "https://www.youtube.com/watch?v=jeqv7gJ9hSE",
