@@ -49,7 +49,7 @@ export const publicationData: Publication[] = [
   },
   {
     year: "2023",
-    conference: "ACM TOCHI",
+    conference: "CHI",
     title: "Crane: An Integrated Computational Design Platform for Functional, Foldable, and Fabricable Origami Products",
     authors: "Kai Suto, <span class='underline'>Yuta Noma</span>, Kotaro Tanimichi, Koya Narumi, Tomohiro Tachi",
     // projectUrl: "https://narumi.me/inkjet4dprint",
