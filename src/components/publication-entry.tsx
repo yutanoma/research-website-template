@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, StickyNote, Video, Code, Globe } from "lucide-react";
+import { ArrowUpRight, StickyNote, Video, Code, Globe, Clock } from "lucide-react";
 import { Publication } from "@/data/publication";
 
 export function PublicationEntry({
@@ -108,6 +108,17 @@ export function PublicationEntry({
             {publication.tldr}
           </p>
         )}
+        {publication.isNew && (
+            <span
+              className="group inline-flex items-center gap-2 text-sm font-bold"
+            >
+              <Clock
+                size={12}
+                className="group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase transition-colors duration-300 underline">Coming soon...</span>
+            </span>
+          )}
       </div>
     </div>
   );

@@ -11,10 +11,45 @@ export interface Publication {
   tldr?: string;
   imageUrl?: string;
   award?: string;
+  isNew?: boolean;
 }
 
 export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
+  {
+    year: "2025",
+    conference: "SIGGRAPH Asia",
+    title: "Medial Sphere Preconditioning for Knot Untangling and Volume-Filling Curves",
+    authors: "<span class='underline'>Yuta Noma</span>, Alec Jacobson, Karan Singh",
+    // projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
+    // paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
+    // codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
+    // videoUrl: "https://www.youtube.com/watch?v=DeWv9sClz-8",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl: "/images/proj_vol_filling.webp",
+    // award: "🏆 Best Paper Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+    isNew: true,
+  },
+  {
+    year: "2025",
+    conference: "SCF",
+    title: "OriStitch: A Machine Embroidery Workflow to Turn Existing Fabrics into Self-Folding 3D Textiles",
+    authors: "Zekun Chang, Yixuan Gao, <span class='underline'>Yuta Noma</span>, Shuo Feng, Xinyi Yang, Kazuhiro Shinoda, Tung Ta, Koji Yatani, Tomoyuki Yokota, Takao Someya, Tomohiro Tachi, Yoshihiro Kawahara, Koya Narumi, Francois Guimbretiere, Thijs Roumen",
+    // projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
+    // paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
+    // codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
+    // videoUrl: "https://www.youtube.com/watch?v=DeWv9sClz-8",
+    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
+    // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
+    imageUrl: "/images/proj_oristitch.webp",
+    // award: "🏆 Best Paper Award",
+    // if you have an image in public/images, you can use it like this:
+    // imageUrl: "/images/publication-image.jpg"
+    isNew: true,
+  },
   {
     year: "2024",
     conference: "SIGGRAPH North America",
