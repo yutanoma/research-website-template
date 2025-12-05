@@ -38,17 +38,17 @@ export const publicationData: Publication[] = [
     conference: "SCF",
     title: "OriStitch: A Machine Embroidery Workflow to Turn Existing Fabrics into Self-Folding 3D Textiles",
     authors: "Zekun Chang, Yixuan Gao, <span class='underline'>Yuta Noma</span>, Shuo Feng, Xinyi Yang, Kazuhiro Shinoda, Tung Ta, Koji Yatani, Tomoyuki Yokota, Takao Someya, Tomohiro Tachi, Yoshihiro Kawahara, Koya Narumi, Francois Guimbretiere, Thijs Roumen",
-    // projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
-    // paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
+    projectUrl: "https://zekunchang.com/portfolio/oristitch/",
+    paperUrl: "https://dl.acm.org/doi/10.1145/3745778.3766666",
     // codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
-    // videoUrl: "https://www.youtube.com/watch?v=DeWv9sClz-8",
+    videoUrl: "https://vimeo.com/1055065341?fl=pl&fe=ti",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
     // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
     imageUrl: "/images/proj_oristitch.webp",
     // award: "🏆 Best Paper Award",
     // if you have an image in public/images, you can use it like this:
     // imageUrl: "/images/publication-image.jpg"
-    isNew: true,
+    // isNew: true,
   },
   {
     year: "2024",
