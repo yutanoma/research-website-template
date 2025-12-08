@@ -23,15 +23,15 @@ export const publicationData: Publication[] = [
     authors: "<span class='underline'>Yuta Noma</span>, Alec Jacobson, Karan Singh",
     // projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
     // paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
-    // codeUrl: "https://github.com/yutanoma/surface-filling-curve-flows",
-    // videoUrl: "https://www.youtube.com/watch?v=DeWv9sClz-8",
+    codeUrl: "https://github.com/yutanoma/medial-sphere-preconditioning",
+    videoUrl: "https://youtu.be/Oz-sSmU0ZxQ",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
     // tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
     imageUrl: "/images/proj_vol_filling.webp",
     // award: "🏆 Best Paper Award",
     // if you have an image in public/images, you can use it like this:
     // imageUrl: "/images/publication-image.jpg"
-    isNew: true,
+    // isNew: true,
   },
   {
     year: "2025",
