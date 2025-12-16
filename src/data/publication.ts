@@ -22,7 +22,7 @@ export const publicationData: Publication[] = [
     title: "Medial Sphere Preconditioning for Knot Untangling and Volume-Filling Curves",
     authors: "<span class='underline'>Yuta Noma</span>, Alec Jacobson, Karan Singh",
     // projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
-    // paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
+    paperUrl: "/pdfs/medial-sphere-preconditioning.pdf",
     codeUrl: "https://github.com/yutanoma/medial-sphere-preconditioning",
     videoUrl: "https://youtu.be/Oz-sSmU0ZxQ",
     //bibtex: "https://arxiv.org/abs/2409.15476.bib",
