@@ -17,6 +17,15 @@ export interface Publication {
 export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
   {
+    year: "2026",
+    conference: "Eurographics",
+    title: "Mesh Processing Non-Meshes via Neural Displacement Fields",
+    authors: "<span class='underline'>Yuta Noma</span>, Zhecheng Wang, Chenxi Liu, Karan Singh, Alec Jacobson",
+    paperUrl: "https://arxiv.org/pdf/2508.12179",
+    imageUrl: "/images/proj_neural_displacement.jpg",
+    isNew: true,
+  },
+  {
     year: "2025",
     conference: "SIGGRAPH Asia",
     title: "Medial Sphere Preconditioning for Knot Untangling and Volume-Filling Curves",
