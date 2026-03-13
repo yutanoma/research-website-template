@@ -23,7 +23,7 @@ export const publicationData: Publication[] = [
     authors: "<span class='underline'>Yuta Noma</span>, Zhecheng Wang, Chenxi Liu, Karan Singh, Alec Jacobson",
     paperUrl: "https://arxiv.org/pdf/2508.12179",
     imageUrl: "/images/proj_neural_displacement.jpg",
-    isNew: true,
+    // isNew: true,
   },
   {
     year: "2025",
