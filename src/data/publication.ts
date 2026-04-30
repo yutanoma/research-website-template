@@ -21,6 +21,7 @@ export const publicationData: Publication[] = [
     conference: "Eurographics",
     title: "Mesh Processing Non-Meshes via Neural Displacement Fields",
     authors: "<span class='underline'>Yuta Noma</span>, Zhecheng Wang, Chenxi Liu, Karan Singh, Alec Jacobson",
+    projectUrl: "https://yutanoma.com/projects/neural-displacement-fields/",
     paperUrl: "https://yutanoma.com/pdfs/neural-displacement-fields.pdf",
     codeUrl: "https://github.com/yutanoma/neural-displacement-fields",
     imageUrl: "/images/proj_neural_displacement.jpg",
