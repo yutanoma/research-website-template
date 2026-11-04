@@ -12,14 +12,41 @@ export interface Publication {
   imageUrl?: string;
   award?: string;
   isNew?: boolean;
+  /** Mark as a selected publication (shown under the "Selected" filter). */
+  selected?: boolean;
 }
 
 export const publicationData: Publication[] = [
   // If you don't want to show publications, just make the array empty.
   {
     year: "2026",
+    conference: "Communications Engineering",
+    title: "Magnetic field estimation using Gaussian process regression for interactive wireless power system design",
+    selected: false,
+    authors: "Yuichi Honjo, Cedric Caremel, Ken Takaki, <span class='underline'>Yuta Noma</span>, Yoshihiro Kawahara, Takuya Sasatani",
+    // projectUrl: "https://yutanoma.com/projects/neural-displacement-fields/",
+    // paperUrl: "https://yutanoma.com/projects/neural-displacement-fields/neural-displacement-fields.pdf",
+    // codeUrl: "https://github.com/yutanoma/neural-displacement-fields",
+    imageUrl: "/images/proj_magnetic_field_estimation.png",
+    // isNew: true,
+  },
+  {
+    year: "2026",
+    conference: "ACM SCF",
+    title: "Make It Balance: Interactive Design of Free-Form Balancing Objects by Center of Mass Externalization",
+    selected: false,
+    authors: "Shunsuke Hirata, <span class='underline'>Yuta Noma</span>, Koya Narumi, Yoshihiro Kawahara",
+    // projectUrl: "https://yutanoma.com/projects/neural-displacement-fields/",
+    // paperUrl: "https://yutanoma.com/projects/neural-displacement-fields/neural-displacement-fields.pdf",
+    // codeUrl: "https://github.com/yutanoma/neural-displacement-fields",
+    imageUrl: "/images/proj_make_it_balance.png",
+    // isNew: true,
+  },
+  {
+    year: "2026",
     conference: "Eurographics",
     title: "Mesh Processing Non-Meshes via Neural Displacement Fields",
+    selected: true,
     authors: "<span class='underline'>Yuta Noma</span>, Zhecheng Wang, Chenxi Liu, Karan Singh, Alec Jacobson",
     projectUrl: "https://yutanoma.com/projects/neural-displacement-fields/",
     paperUrl: "https://yutanoma.com/projects/neural-displacement-fields/neural-displacement-fields.pdf",
@@ -31,6 +58,7 @@ export const publicationData: Publication[] = [
     year: "2025",
     conference: "SIGGRAPH Asia",
     title: "Medial Sphere Preconditioning for Knot Untangling and Volume-Filling Curves",
+    selected: true,
     authors: "<span class='underline'>Yuta Noma</span>, Alec Jacobson, Karan Singh",
     projectUrl: "https://www.dgp.toronto.edu/projects/medial-sphere-preconditioning/",
     paperUrl: "https://www.dgp.toronto.edu/projects/medial-sphere-preconditioning/medial-sphere-preconditioning.pdf",
@@ -65,6 +93,7 @@ export const publicationData: Publication[] = [
     year: "2024",
     conference: "SIGGRAPH North America",
     title: "Surface-Filling Curve Flows via Implicit Medial Axes",
+    selected: true,
     authors: "<span class='underline'>Yuta Noma</span>, Silvia Sellán, Nicholas Sharp, Karan Singh, Alec Jacobson",
     projectUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/",
     paperUrl: "https://www.dgp.toronto.edu/projects/surface-filling-curves/surface-filling-curves.pdf",
@@ -113,6 +142,7 @@ export const publicationData: Publication[] = [
     year: "2022",
     conference: "SIGGRAPH Asia",
     title: "Fast Editing of Singularities in Field-Aligned Stripe Patterns",
+    selected: true,
     authors: "<span class='underline'>Yuta Noma</span>, Nobuyuki Umetani, Yoshihiro Kawahara",
     // projectUrl: "https://narumi.me/inkjet4dprint",
     paperUrl: "https://dl.acm.org/doi/10.1145/3550469.3555387",
@@ -129,6 +159,7 @@ export const publicationData: Publication[] = [
     year: "2020",
     conference: "UIST",
     title: "Pop-up Print: Rapidly 3D Printing Mechanically Reversible Objects in the Folded State",
+    selected: true,
     authors: "<span class='underline'>Yuta Noma</span>, Koya Narumi, Fuminori Okuya, Yoshihiro Kawahara",
     projectUrl: "https://narumi.me/pop-up-print",
     paperUrl: "https://drive.google.com/file/d/10wTWySzOccmUK7VSKrQT99MHp3e_nvKT/view",

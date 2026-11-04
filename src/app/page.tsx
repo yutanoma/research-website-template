@@ -1,6 +1,6 @@
 import { EducationEntry } from "@/components/education-entry";
 import { educationData } from "@/data/education";
-import { PublicationEntry } from "@/components/publication-entry";
+import { PublicationSection } from "@/components/publication-section";
 import { publicationData } from "@/data/publication";
 import { ProfileSection } from "@/components/profile-section";
 import { aboutMe } from "@/data/aboutme";
@@ -11,7 +11,6 @@ import { experienceData } from "@/data/experience";
 import { PortfolioEntry } from "@/components/portfolio-entry";
 import { portfolioData } from "@/data/portfolio";
 import { sectionOrder, Section } from "@/data/section-order";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -79,24 +78,10 @@ export default function Home() {
                 case Section.Publication:
                   return (
                     publicationData.length > 0 && (
-                      <section key={sectionName}>
-                        <div className="flex items-center mb-8">
-                          <Image src="/images/logo.png" alt="Research" width={32} height={32} className="inline-block mr-4" />
-                          <h2 className="font-serif text-3xl tracking-wide uppercase font-bold">
-                            Research
-                          </h2>
-                        </div>
-                        <div className="space-y-8">
-                          {publicationData.map((publication, index) => (
-                            <div key={index}>
-                              <PublicationEntry publication={publication} />
-                              {index < publicationData.length - 1 && (
-                                <div className="h-px bg-zinc-200 my-8" />
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </section>
+                      <PublicationSection
+                        key={sectionName}
+                        publications={publicationData}
+                      />
                     )
                   );
                 case Section.Experience:
