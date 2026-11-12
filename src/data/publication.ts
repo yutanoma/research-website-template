@@ -25,7 +25,7 @@ export const publicationData: Publication[] = [
     selected: false,
     authors: "Yuichi Honjo, Cedric Caremel, Ken Takaki, <span class='underline'>Yuta Noma</span>, Yoshihiro Kawahara, Takuya Sasatani",
     // projectUrl: "https://yutanoma.com/projects/neural-displacement-fields/",
-    // paperUrl: "https://yutanoma.com/projects/neural-displacement-fields/neural-displacement-fields.pdf",
+    paperUrl: "https://arxiv.org/pdf/2510.19277",
     // codeUrl: "https://github.com/yutanoma/neural-displacement-fields",
     imageUrl: "/images/proj_magnetic_field_estimation.png",
     // isNew: true,
